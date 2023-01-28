@@ -1,32 +1,31 @@
+<br>
+<form action="/action_page.php">
+  <div class="container">
+    <h1 style="text-align: center">Register</h1>
+    <p style="text-align: center">Please fill in this form to create an account.</p>
+    <hr>
 
-<br><br>
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png"  width="200" height="220" style="float:right">
-<main class="form-signin w-100 m-100">
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" id="username" required>
 
-    <form>   
-      <h1 class="h3 mb-3 fw-normal">Register</h1>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <button type="submit" class="registerbtn">Register</button>
   
-      <div class="form-floating">
-        <input class="form-control"  placeholder="Complete Name">
-        <label>Complete Name</label>
-      </div>
-      
-      <div class="form-floating">
-        <input class="form-control" placeholder="name@example.com">
-        <label>Email address</label>
-      </div>
+      <p style="text-align: center;">Already have an account? <a routerLink="/login">Sign in</a>.</p>
 
-      <div class="form-floating">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-        <label for="floatingPassword">Password</label>
-      </div>
-
-      <div class="form-floating">
-        <input class="form-control" placeholder="Password Confirm">
-        <label>Password Confirm</label>
-      </div>
-      <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button> 
-    </form>
-  </main>
+  </div>
+  
+  
+</form>
 
 
